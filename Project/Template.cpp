@@ -2,29 +2,19 @@
 
 using namespace std;
 
-vector<int> solution(vector<int> arr, vector<vector<int>> queries) 
+vector<int> solution(vector<int> arr)
 {
     vector<int> answer;
-    int min = 0;
-    bool isExist = false; 
+    int prev = arr[0];
 
-    for (int i = 0; i < queries.size(); ++i)
+    answer.push_back(arr[0]);
+    for (int i = 1; i < arr.size(); ++i)
     {
-        min = 1000000;
-        isExist = false;
-        for (int j = queries[i][0]; j < queries[i][1]; ++j)
+        if (arr[i] != prev)
         {
-            if (queries[i][2] < arr[j] && arr[j] < min)
-            {
-                min = arr[j];
-                isExist = true;
-            }
+            answer.push_back(arr[i]);
+            prev = arr[i];
         }
-
-        if (!isExist)
-            min = -1;
-
-        answer.push_back(min);
     }
 
     return answer;
@@ -36,7 +26,9 @@ int main(void)
     ios_base::sync_with_stdio(false);
 
     // Code here
-    solution({ 0,1,2,4,3 }, { {0, 4, 2},{0, 3, 2},{0, 2, 2} });
+    solution({ {0, 0, 0, 0, 0},{0, 0, 0, 0, 0},{0, 0, 0, 0, 0},{0, 0, 1, 0, 0},{0, 0, 0, 0, 0} });
     
+    int a = 0;
+
     return 0;
 }

@@ -27,5 +27,11 @@
     <ClCompile Include="programmers\LV2_혼자 놀기의 달인.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="programmers\LV0_안전지대.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="programmers\LV1_같은 숫자는 싫어.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
