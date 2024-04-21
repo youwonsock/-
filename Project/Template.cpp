@@ -1,20 +1,22 @@
-#include <bits/stdc++.h>
+﻿#include <bits/stdc++.h>
 
 using namespace std;
 
-vector<int> solution(vector<int> arr)
+long long solution(int a, int b, vector<int> g, vector<int> s, vector<int> w, vector<int> t) 
 {
-    vector<int> answer;
-    int prev = arr[0];
+    long long answer = -1;
+    long long start = 0;
+    long long end = 0;
 
-    answer.push_back(arr[0]);
-    for (int i = 1; i < arr.size(); ++i)
+    while (true)
     {
-        if (arr[i] != prev)
+        for (int cityIdx = 0; cityIdx < g.size(); ++cityIdx)
         {
-            answer.push_back(arr[i]);
-            prev = arr[i];
+
         }
+
+        if (a <= 0 && b <= 0)
+            break;
     }
 
     return answer;
@@ -26,7 +28,7 @@ int main(void)
     ios_base::sync_with_stdio(false);
 
     // Code here
-    solution({ {0, 0, 0, 0, 0},{0, 0, 0, 0, 0},{0, 0, 0, 0, 0},{0, 0, 1, 0, 0},{0, 0, 0, 0, 0} });
+    solution("Programmers");
     
     int a = 0;
 

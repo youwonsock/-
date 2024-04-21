@@ -33,5 +33,11 @@
     <ClCompile Include="programmers\LV1_같은 숫자는 싫어.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="programmers\LV0 옹알이(1).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="programmers\LV3_금과 은 운반하기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
