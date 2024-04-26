@@ -39,5 +39,8 @@
     <ClCompile Include="programmers\LV3_금과 은 운반하기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="programmers\LV2_하노이탑.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

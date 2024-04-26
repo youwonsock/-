@@ -2,22 +2,24 @@
 
 using namespace std;
 
-long long solution(int a, int b, vector<int> g, vector<int> s, vector<int> w, vector<int> t) 
+void Hanoi(int n, int from, int by, int to, vector<vector<int>>& answer)
 {
-    long long answer = -1;
-    long long start = 0;
-    long long end = 0;
+    if (n == 0)
+        return;
 
-    while (true)
-    {
-        for (int cityIdx = 0; cityIdx < g.size(); ++cityIdx)
-        {
+    Hanoi(n - 1, from, to, by, answer);
 
-        }
+    vector<int> temp = {from, to};
+    answer.push_back(temp);
 
-        if (a <= 0 && b <= 0)
-            break;
-    }
+    Hanoi(n - 1, by, from, to, answer);
+}
+
+vector<vector<int>> solution(int n) 
+{
+    vector<vector<int>> answer;
+
+    Hanoi(n, 1,2,3, answer);
 
     return answer;
 }

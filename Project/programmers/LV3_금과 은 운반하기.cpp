@@ -35,9 +35,11 @@ using namespace std;
 * = (10^5 * 2) * ((2 * 10^9) / 1) + 10^5
 * = (4 * 10^14 + 10^5)
 * 
+* 해당시간에 운반 가능한 금, 은, 총 운반량을 확인하여
+* 입력값보다 크다면 true 아니면 false
 */
 
-bool Search(int a, int b, vector<int> g, vector<int> s, vector<int> w, vector<int> t, long long Mid)
+bool Search(int a, int b, vector<int>& g, vector<int>& s, vector<int>& w, vector<int>& t, long long Mid)
 {
     long long Total_Gold = 0;
     long long Total_Silver = 0;
