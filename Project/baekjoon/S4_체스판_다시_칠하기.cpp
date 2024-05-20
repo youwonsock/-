@@ -1,4 +1,4 @@
-﻿#include <bits/stdc++.h>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -51,8 +51,7 @@ int main(void)
     }
 
     cout << answer;
-
-    return answer;
+    return 0;
 }
 
 int CompareWB(std::vector<string>& board, int x, int y)
