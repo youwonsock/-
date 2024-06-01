@@ -7,7 +7,5 @@ int main(void)
 {
     fastIo
 
-
     return 0;
 }
-
