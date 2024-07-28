@@ -9,8 +9,7 @@ int main(void)
 /* 백준
 
  
-
-#include <bits / stdc++.h>
+#include <iostream>
 
 using namespace std;
 #define fastIo ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
